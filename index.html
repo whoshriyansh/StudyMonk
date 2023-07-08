@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/03d981a570.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- html for Header Section  -->
+    <header class="header">
+      <img src="logo.png" alt="" />
+      <nav class="navbar">
+        <ul>
+          <li><a href="">About</a></li>
+          <li><a href="">Community</a></li>
+          <li><a href="">Hire from us</a></li>
+          <li><a href="">Connect</a></li>
+          <li><a id="loginbtn" href="">Log-In</a></li>
+          <div class="search-bar">
+            <input type="text" id="searchInput"  placeholder="Search..." />
+            <button type="submit">Search</button>
+          </div>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- html for form login section  -->
+    <div class="form-box" id="popUp">
+      <button id="closeBtn">&times;</button>
+      <h1 id="tittle">Sign-Up</h1>
+      <form>
+        <div class="input-group">
+          <div class="input-field" id="nameField">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" placeholder="Name" required />
+          </div>
+
+          <div class="input-field">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" placeholder="Email" required />
+          </div>
+
+          <div class="input-field">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" placeholder="Password" required />
+          </div>
+          <p>Forgot Password <a href="">Click Here</a></p>
+        </div>
+        <div class="btn-field">
+          <button type="buttom" id="signUpbtn">Sign Up</button>
+          <button type="buttom" id="signInbtn" class="disable">Sign In</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- html for Heros section  -->
+    <section class="hero-section">
+      <h2>
+        Unloacking potential: <br />
+        AI-Powered Learning On
+      </h2>
+      <h1>StudyMonk</h1>
+      <p>
+        Harness the power of AI on StudyMonk, where cutting-edge technology
+        transforms <br />the way you learn. Explore a vast library of resources,
+        receive personalized <br />recommendations, and embark on a journey of
+        unlimited knowledge.
+      </p>
+      <button>Click</button>
+    </section>
+
+    <!-- html for Brand List  -->
+    <section class="brandlist">
+      <h1>Our Trusted Brands</h1>
+      <img src="logo.png" alt="" />
+      <img src="logo.png" alt="" />
+      <img src="logo.png" alt="" />
+      <img src="logo.png" alt="" />
+    </section>
+
+    <!-- html for Gallery Section  -->
+    <section class="gallery">
+      <div class="gallery-info">
+        <h2>Journey of Inspiration</h2>
+        <p>
+          Step into our inspiring gallery and witness the transformative power
+          of education. Discover stories of triumph, motivation, and personal
+          growth shared by our vibrant community. From students to working
+          professionals and esteemed experts, this gallery is a testament to the
+          limitless potential that lies within each individual.
+        </p>
+        <button>View all</button>
+      </div>
+      <div class="galleryimg">
+        <img src="image1.jpg" alt="" />
+        <img src="image2.jpg" alt="" />
+        <img src="image3.jpg" alt="" />
+      </div>
+      <div class="galleryimg2">
+        <img src="image4.jpg" alt="" />
+        <img src="image5.jpg" alt="" />
+      </div>
+    </section>
+
+    <!-- html for work section -->
+    <section class="work">
+      <div class="work-info">
+        <h2>
+          Revolutionizing Education: <br />
+          Empowering Minds with StudyMonk
+        </h2>
+        <p>
+          Join a vibrant community of learners as we break barriers, provide
+          <br />
+          guidance, and create opportunities for growth. Experience the <br />
+          transformative power of StudyMonk in revolutionizing education for a
+          <br />
+          brighter future.
+        </p>
+        <button>View all</button>
+      </div>
+    </section>
+
+    <!-- Cards Data Starts from here -->
+    
+    <div class="cards-box" id="cardsBox">
+      </div>
+    </div>
+
+    <!-- offering section Html  -->
+    <section class="offering">
+      <h1>what we have to offer</h1>
+      <h2>Transforming education with technology.</h2>
+      <h2>Enabling growth through diverse programs.
+      </h2>
+      <h2>Unlocking potential through online learning.
+      </h2>
+      <h2>A community of knowledge-sharing.
+      </h2>
+      <h2>Democratizing education for everyone.
+      </h2>
+      <h2>Empowering students with accessible guidance.
+      </h2>
+    </section>
+
+    <!-- footer section html -->
+    <section class="footer">
+      <div class="col-1">
+        <h3>Usefull Links</h3>
+        <a href="">About</a>
+        <a href="">Connect</a>
+        <a href="">Community</a>
+        <a href="">Hire From Us</a>
+        <a href="">LOG-IN</a>
+      </div>
+      <div class="col-2">
+        <h3>Newsletter!</h3>
+        <form>
+          <input type="email" placeholder="Enter you E-mail" required /><br />
+          <button type="submit">Subscribe Now</button>
+        </form>
+      </div>
+      <div class="col-3">
+        <h3>Adress</h3>
+        <h4>This is the adress you can Contact on</h4>
+        <div class="socialIcons">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-behance"></i>
+        </div>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>

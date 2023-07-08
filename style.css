@@ -1,0 +1,565 @@
+@font-face {
+  font-family: "futur", sans-serif;
+  src: url(fonts/futur.ttf);
+}
+@font-face {
+  font-family: "satoshi", sans-serif;
+  src: url(fonts/Satoshi-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "futur", sans-serif;
+}
+
+body {
+  background-color: #f4f0ee;
+}
+
+/* the css for Header section starts from here  */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header > img {
+  width: 8.9375rem;
+  height: 2.5625rem;
+  margin-left: 200px;
+  margin-top: 30px;
+}
+
+.header > nav > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-right: 200px;
+  font-family: "satoshi", sans-serif;
+}
+
+.header > nav > ul > li > a {
+  padding: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  font-family: "satoshi", sans-serif;
+  text-decoration: none;
+  color: #212121;
+}
+
+.header > nav > ul > li > a:hover {
+  color: red; /* Change color on hover */
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  border: 1px solid #f4f0ee;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.search-bar input[type="text"] {
+  flex-grow: 1;
+  padding: 8px;
+  border: none;
+}
+
+.search-bar button {
+  padding: 8px 12px;
+  background-color: #cb3431;
+  color: #f4f0ee;
+  border: none;
+  cursor: pointer;
+}
+/* end of the css for the header section */
+
+.form-box {
+  width: 90%;
+  max-width: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 50px 60px 70px;
+  text-align: center;
+  display: none;
+}
+
+#closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  border: none;
+  background: none;
+  padding: 0;
+  outline: none;
+  color: #cb3431;
+}
+
+.form-box h1 {
+  font-size: 30px;
+  color: #cb3431;
+  margin-bottom: 60px;
+  position: relative;
+}
+.form-box h1::after {
+  content: "";
+  width: 30px;
+  height: 4px;
+  border-radius: 3px;
+  background: #cb3431;
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.input-field {
+  background: #f4f0ee;
+  margin: 15px 0;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 40px;
+  transition: max-height 0.8s;
+  overflow: hidden;
+}
+
+.input-field input {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  outline: 0;
+
+  margin-top: 41px;
+}
+
+.input-field i {
+  margin-left: 15px;
+  color: #cb3431;
+}
+
+form p {
+  font-size: 15px;
+  text-align: left;
+}
+
+form p a {
+  text-decoration: none;
+  color: #cb3431;
+}
+
+.btn-field {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.btn-field button {
+  flex-basis: 48%;
+  background-color: #cb3431;
+  color: #f4f0ee;
+  border: 0;
+  outline: 0;
+  border-radius: 30px;
+  margin-top: 20px;
+  transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.btn-field button.disable {
+  background-color: #f4f0ee;
+  color: #212121;
+}
+
+.btn-field button:hover {
+  transform: scale(1.1);
+  background-color: #f4f0ee;
+  border: 2px solid #cb3431;
+  color: #cb3431;
+}
+
+/*  css for Hero section starts from here  */
+.hero-section > h2 {
+  margin-left: 300px;
+  margin-top: 200px;
+  color: #212121;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.hero-section > h1 {
+  margin-left: 300px;
+  color: #cb3431;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  cursor: pointer;
+  transition: font-size 0.6s ease;
+}
+
+.hero-section > h1:hover {
+  font-size: 80px;
+}
+
+.hero-section > p {
+  margin-left: 300px;
+  color: #212121;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  font-family: "satoshi", sans-serif;
+}
+
+.hero-section > button {
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-size: 15px;
+  margin-left: 300px;
+  margin-top: 20px;
+  transition: transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.hero-section > button:hover {
+  transform: scale(1.1);
+  background-color: #f4f0ee;
+  border: 2px solid #cb3431;
+  color: #cb3431;
+}
+/* end of the css for the Hero section */
+
+/*  css for BrandList section starts from here  */
+.brandlist {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 300px;
+}
+
+.brandlist h1 {
+  color: #212121;
+  font-family: "futur", sans-serif;
+  font-size: 24px;
+  cursor: pointer;
+  transition: font-size 0.3s ease;
+}
+.brandlist h1:hover {
+  font-size: 32px;
+}
+
+.brandlist > img {
+  width: 147px;
+  height: 42px;
+  opacity: 0;
+  animation: fadeIn 3s ease-in-out forwards;
+  transition: transform 0.3s ease;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.brandlist > img:hover {
+  transform: scale(1.2);
+}
+/* end of the css for the Brand List section */
+
+/*  css for Gallery section starts from here  */
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 300px;
+}
+
+.gallery .gallery-info h2 {
+  flex-shrink: 0;
+  color: #cb3431;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  cursor: pointer;
+  transition: font-size 0.6s ease;
+}
+.gallery .gallery-info h2:hover {
+  font-size: 50px;
+}
+
+.gallery .gallery-info p {
+  color: #212121;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  font-family: "satoshi", sans-serif;
+}
+.gallery .gallery-info button {
+  border-radius: 30px;
+  padding: 10px 30px;
+  margin-top: 20px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.gallery .gallery-info button:hover {
+  transform: scale(1.1);
+  background-color: #f4f0ee;
+  border: 2px solid #cb3431;
+  color: #cb3431;
+}
+
+.gallery .galleryimg {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+}
+.gallery .galleryimg > img {
+  width: 292px;
+  height: 194.69px;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery .galleryimg:hover > img {
+  transform: scale(1.1); /* Increase the size on hover */
+}
+
+.gallery .galleryimg2 > img {
+  width: 292px;
+  height: 194.69px;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery .galleryimg2:hover > img {
+  transform: scale(1.1); /* Increase the size on hover */
+}
+/* end of the css for the Gallery section */
+
+/*  css for Work section starts from here  */
+.work {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 300px;
+  align-items: center;
+}
+
+.work .work-info h2 {
+  flex-shrink: 0;
+  color: #cb3431;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  cursor: pointer;
+  transition: font-size 0.6s ease;
+}
+
+.work .work-info h2:hover {
+  font-size: 50px;
+}
+
+.work .work-info p {
+  color: #212121;
+  font-family: Satoshi Variable;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  font-family: "satoshi", sans-serif;
+}
+
+.work .work-info button {
+  border-radius: 30px;
+  padding: 10px 30px;
+  margin-top: 20px;
+  font-size: 15px;
+
+  cursor: pointer;
+  transition: transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.work .work-info button:hover {
+  transform: scale(1.1);
+  background-color: #f4f0ee;
+  border: 2px solid #cb3431;
+  color: #cb3431;
+}
+/* end of the css for the Work section */
+
+/* css for the cars starts from here  */
+.cards-box {
+  display: flex;
+  align-items: center;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-top: 100px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card {
+  width: 300px;
+  height: 310px;
+  box-shadow: 0 3px 5px #1e1e1e;
+  transition: transform 0.3s;
+  border-radius: 10px;
+  margin: 12px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+.card img {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10%;
+}
+
+.card h2 {
+  font-family: "futur", sans-serif;
+  color: #cb3431;
+  font-size: 20px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.card h3 {
+  color: #1e1e1e;
+  font-size: 15px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  font-family: "satoshi", sans-serif;
+}
+/* css for the cards ends here  */
+
+/*  css for Offering section starts from here  */
+.offering {
+  height: 704px;
+  width: 100%;
+  background-color: #cb3431;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.offering h1 {
+  color: #212121;
+  padding-bottom: 30px;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  cursor: default;
+  transition: font-size 0.3s ease, transform 0.3s ease;
+}
+
+.offering h1:hover {
+  font-size: 64px;
+  cursor: pointer;
+}
+
+.offering h2 {
+  color: #f4f0ee;
+  padding: 6px;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  font-family: "satoshi", sans-serif;
+  transition: transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.offering h2:hover {
+  opacity: 0.8;
+  font-size: 32px;
+}
+/* end of the css for the Offering section */
+
+/*  css for Footer section starts from here  */
+.footer {
+  width: 100%;
+  padding: 100px 15%;
+  background-color: #212121;
+  color: #f4f0ee;
+  display: flex;
+}
+
+.footer div {
+  text-align: center;
+}
+.footer h3 {
+  font-family: "futur", sans-serif;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.col-1 a {
+  display: block;
+  text-decoration: none;
+  color: #f4f0ee;
+  margin-bottom: 10px;
+  font-family: "satoshi", sans-serif;
+}
+.col-2 {
+  flex-grow: 2;
+}
+
+form input {
+  width: 400px;
+  height: 45px;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  outline: none;
+  border: none;
+}
+
+form button {
+  background-color: transparent;
+  border: 2px solid #f4f0ee;
+  color: #f4f0ee;
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-size: 15px;
+}
+form button :hover {
+  transform: scale(1.1);
+  background-color: #f4f0ee;
+  border: 2px solid #cb3431;
+  color: #cb3431;
+}
+
+.socialIcons {
+  margin-top: 30px;
+}
+
+.socialIcons i {
+  font-size: 22px;
+  cursor: pointer;
+  margin: 10px;
+}
+/* end of the css for the Footer section */
